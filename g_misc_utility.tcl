@@ -1,3 +1,8 @@
+#----------------- g_misc_utility.tcl ------------------------------------------------------#
+# what: collection of miscellaneous utilities for tcl and tk
+# author: Ricardo Victor Guiman II
+#-------------------------------------------------------------------------------------------#
+
 #----------- gQuickMail --------------------------------------------------------------------#
 # what:    simple procedure to send email in linux or unix like system
 # args:    subject sendTo bodyMsg ccTo bccTo ( message and email adress )
