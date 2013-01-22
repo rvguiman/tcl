@@ -1,3 +1,9 @@
+#---------------- g_file_utility.tcl ------------------------------------------------#
+# what: collection of file utility procedures for tcl and tk
+# author: Ricardo Victor Guiman II
+#------------------------------------------------------------------------------------#
+
+
 #------- gGetFileDate ---------------------------------------------------------------#
 # what:   get the date of the file creation or latest modification
 # args:   filePass
