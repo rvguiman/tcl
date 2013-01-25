@@ -6,7 +6,7 @@
 
 #------- gGetFileDate ---------------------------------------------------------------#
 # what:   get the date of the file creation or latest modification
-# args:   file 
+# args:   file to get date
 # return: a list, index 0 is time in seconds, index 1 is time in human readable form
 #------------------------------------------------------------------------------------#
 
@@ -25,6 +25,7 @@ proc gGetFileDate { filePass } {
 
 proc gFileExistCheck { listFileAndErr } {
 	set retList [list]
+	set errCtr 0
 	set defErrStr "is missing"
 	foreach curPair $listFileAndErr {
 		if { [llength $curPair] == 2 } { 
@@ -37,7 +38,12 @@ proc gFileExistCheck { listFileAndErr } {
 		if { [file exists $theFile] != 1 } {
 			puts "$theFile $theErr"
 			lappend retList [list $theFile $theErr]
+			incr errCtr 
 			}
 		}
-	return $retList
+	if { $errCtr != 0 } {
+		return $retList
+		} else {
+		return 1
+		}
 	}    
