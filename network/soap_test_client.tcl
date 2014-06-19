@@ -12,5 +12,9 @@ exec /APP1/Tcl/Linux-x86_64/ActiveTcl8.5.9.2/bin/tclsh "$0" ${1+"$@"}
 
 package require SOAP
 
-SOAP::create sum -uri "urn:ruby:mathcalc" -proxy "http://127.0.0.1:9900" -params { add num1 num2 }
+SOAP::create sum -uri "urn:ruby:mathcalc" -proxy "http://127.0.0.1:9900" -params { num1 int num2 int }
 puts [::sum 10 30]
+
+SOAP::create dif -uri "urn:ruby:mathcalc" -proxy "http://127.0.0.1:9900" -params { num1 int num2 int }
+puts [::dif 10 30]
+
