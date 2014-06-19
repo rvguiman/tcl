@@ -7,6 +7,10 @@ exec /bin/tclsh "$0" ${1+"$@"}
 # author: ricardo
 #-------------------------------------------------------#
 
+# lappend ::auto_path /your_dir/tcl/lib/
+
+package require tls 1.5
+
 set server ""
 set portN 6600
 
@@ -25,6 +29,9 @@ proc serverStart { } {
     global server
     global pPhrase
     global portN
+    global caCert
+    global serverCert
+    global serverKey
     
     if { $pPhrase == "" } {
         ::tsl::init -cafile $caCert -certfile $serverCert -keyfile $serverKey -ssl3 0 -require 1 -request 1
