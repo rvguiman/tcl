@@ -4,6 +4,8 @@ exec /ActiveTcl8.6.0.0/bin/tclsh "$0" ${1+"$@"}
 
 #----------------------------------------------
 # what: sample tcl class using TclOO
+# author: ricardo
+#----------------------------------------------
 
 package require TclOO
 
