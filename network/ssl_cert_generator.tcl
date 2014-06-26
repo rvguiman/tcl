@@ -1,6 +1,6 @@
 #!/bin/sh
 # next line starts using tclsh \
-exec /bin/tclsh "$0" ${1+"$@"}
+exec /usr/local/bin/wish "$0" ${1+"$@"}
 
 #-----------------------------------------------------------------------------------------------#
 # what: sample to generate self signed SSL certificate using openssl
