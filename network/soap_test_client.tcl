@@ -1,6 +1,6 @@
 #!/bin/sh
 # next line restarts using tclsh \
-exec /usr/local/bin/wish "$0" ${1+"$@"}
+exec /usr/local/bin/tclsh "$0" ${1+"$@"}
 
 #--------------------------------------------------------------
 # what: simple client test for ruby soapclient at ruby repo
