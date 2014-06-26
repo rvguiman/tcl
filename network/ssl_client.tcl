@@ -1,13 +1,12 @@
 #!/bin/sh
 # next line starts using tclsh \
-exec /bin/tclsh "$0" ${1+"$@"}
+exec /usr/local/bin/tclsh "$0" ${1+"$@"}
 
 #-------------------------------------------------
 # what: sample ssl client
 # author: ricardo
 #-------------------------------------------------
 
-# lappend ::auto_path /your_tcllib_package/dir/lib
 
 package require tls 1.5
 
