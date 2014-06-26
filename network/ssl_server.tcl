@@ -1,13 +1,11 @@
 #!/bin/sh
 #next line restarts using tclsh \
-exec /bin/tclsh "$0" ${1+"$@"}
+exec /usr/local/bin/tclsh "$0" ${1+"$@"}
 
 #-------------------------------------------------------#
 # what: tcl ssl server using self signed certificate
 # author: ricardo
 #-------------------------------------------------------#
-
-# lappend ::auto_path /your_dir/tcl/lib/
 
 package require tls 1.5
 
