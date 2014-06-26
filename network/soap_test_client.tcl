@@ -1,14 +1,12 @@
 #!/bin/sh
 # next line restarts using tclsh \
-exec /APP1/Tcl/Linux-x86_64/ActiveTcl8.5.9.2/bin/tclsh "$0" ${1+"$@"}
+exec /usr/local/bin/wish "$0" ${1+"$@"}
 
 #--------------------------------------------------------------
 # what: simple client test for ruby soapclient at ruby repo
 # author: ricardo
 #--------------------------------------------------------------
 
-# change to package your path
-# lappend ::auto_path /your_path/Tcl/lib/
 
 package require SOAP
 
