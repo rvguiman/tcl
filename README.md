@@ -3,19 +3,27 @@ tcl
 <h3>collection of tcl example scripts , utilities and modules</h3>
 
 <h4>Network</h4>
-openssl config file example
-soap client example
-certificate generator using ssl - full application
-ssl client example
-ssl server example
+<ol>
+<li>openssl config file example</li>
+<li>soap client example</li>
+<li>certificate generator using ssl - full application</li>
+<li>ssl client example</li>
+<li>ssl server example</li>
+</ol>
 
 <h4>Object</h4>
-using snit obeject oriented package example
-using tcloo package example
+<ol>
+<li>using snit obeject oriented package example</li>
+<li>using tcloo package example</li>
+</ol>
 
 <h4>Package</h4>
-sample way to access or use a folder within the package relative path
+<ol>
+<li>sample way to access or use a folder within the package relative path</li>
+</ol>
 
 <h4>Utilities</h4>
-collection of file utility procedures for tcl - get file date and file exists check.
-sample way of using linux mail called inside tcl script
+<ol>
+<li>collection of file utility procedures for tcl - get file date and file exists check.</li>
+<li>sample way of using linux mail called inside tcl script</li>
+</ol>
